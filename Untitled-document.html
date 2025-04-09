@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A-Frame Shape Display</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Cone -->
+      <a-entity 
+        geometry="primitive: cone; height: 2; radiusBottom: 1; radiusTop: 0" 
+        material="color: #4CC3D9" 
+        position="-2 1 -4" 
+        rotation="0 45 0">
+      </a-entity>
+      
+      <!-- Dodecahedron -->
+      <a-entity 
+        geometry="primitive: dodecahedron; radius: 1" 
+        material="color: #EF2D5E" 
+        position="0 1 -4" 
+        rotation="0 45 0">
+      </a-entity>
+      
+      <!-- Torus -->
+      <a-entity 
+        geometry="primitive: torus; radius: 1; tube: 0.3" 
+        material="color: #FFC65D" 
+        position="2 1 -4" 
+        rotation="0 45 0">
+      </a-entity>
+      
+      <!-- Ground plane -->
+      <a-plane 
+        position="0 0 -4" 
+        rotation="-90 0 0" 
+        width="8" 
+        height="8" 
+        color="#7BC8A4">
+      </a-plane>
+      
+      <!-- Sky background -->
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+    
+    <p style="margin: 20px; font-family: Arial, sans-serif;">
+      Use this AFrameJS <a href="https://aframe.io/docs/1.7.0/components/geometry.html" target="_blank">resource</a>. 
+      Submit your &lt;rollnumber&gt;.html page in your github.io page i.e. https://&lt;yourdomain&gt;.github.io/&lt;rollnumber&gt;.html 
+      and submit <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vDsaA3zPK06W7IZ1VVQKHFzW4INMf2JMjyL9qPnlPbNUMkpZQkY1SlpKWUtQWTY5RVVNS0k2RFQyRi4u" target="_blank">here</a>
+    </p>
+  </body>
+</html>
